@@ -1,0 +1,75 @@
+/* 全体の背景 */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom right, #4facfe, #00f2fe);
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* コンテナスタイル */
+.login-container {
+  background-color: white;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  text-align: center;
+}
+
+/* 見出し */
+.login-container h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* フォームグループ */
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* 入力フィールド */
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #333;
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #4facfe;
+}
+
+/* ボタンスタイル */
+.login-button {
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  color: white;
+  font-size: 16px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.3s ease;
+}
+
+.login-button:hover {
+  background: linear-gradient(to right, #00f2fe, #4facfe);
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 400px) {
+  .login-container {
+    width: 90%;
+  }
+}

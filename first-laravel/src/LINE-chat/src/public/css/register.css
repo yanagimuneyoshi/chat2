@@ -1,0 +1,70 @@
+/* 全体の背景スタイル */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom right, #ff7eb3, #ff758c);
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* フォーム全体のコンテナ */
+form {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 入力フィールドスタイル */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+/* フォーカス時の効果 */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #ff758c;
+}
+
+/* ボタンスタイル */
+button[type="submit"] {
+  background: linear-gradient(to right, #ff758c, #ff7eb3);
+  color: white;
+  font-size: 16px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 15px;
+  transition: background 0.3s ease;
+}
+
+/* ボタンホバー効果 */
+button[type="submit"]:hover {
+  background: linear-gradient(to right, #ff7eb3, #ff758c);
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 400px) {
+  form {
+    width: 90%;
+  }
+}

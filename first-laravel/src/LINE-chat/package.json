@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "watch": "vite"
+  },
+  "dependencies": {
+    "laravel-echo": "^1.17.1",
+    "pusher-js": "^8.4.0-rc2"
+  },
+  "devDependencies": {
+    "laravel-vite-plugin": "^0.7.8",
+    "vite": "^4.5.5"
+  }
+}
